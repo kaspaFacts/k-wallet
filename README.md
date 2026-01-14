@@ -18,7 +18,8 @@ When you receive your first tip, here's what you should do:
 
 - Your password encrypts your mnemonic in storage
 - Without the password, you cannot access your funds
-- There's no recovery option for forgotten passwords
+- If you forget your password, you can recover your wallet with your 12-word mnemonic phrase
+- Your password itself cannot be recovered - only your wallet can be restored using the mnemonic
 - Choose a strong, memorable password before creating your wallet
 
 ### 2. Create and Secure Your Wallet
@@ -98,6 +99,15 @@ A comprehensive guide to using the K-Wallet Discord bot for Kaspa (KAS) tipping 
 5. [How Tipping Works](#how-tipping-works)
 6. [Security Best Practices](#security-best-practices)
 7. [Troubleshooting](#troubleshooting)
+
+## 🔐 Password Requirements
+
+**Before you begin**: Your password encrypts your wallet mnemonic in the Discord bot's storage.
+
+- **Critical**: Using your wallet requires your password - do not lose it
+- Your password is never stored by the bot - it's only used for encryption/decryption
+- If you forget your password, you can recover with your 12-word mnemonic phrase
+- Store your password as securely as your mnemonic phrase
 
 ## Getting Started
 
@@ -276,6 +286,7 @@ For users without wallets:
 - Lock wallet when not in use
 - Be cautious with auto-withdraw feature
 - Verify addresses before withdrawing
+- Using your wallet requires your password, do not lose it
 
 ### 🚨 Important Notes
 
@@ -292,6 +303,7 @@ For users without wallets:
 
 - Run `/kwallet unlock <password>`
 - Check if password is correct
+- Tip: If you've forgotten your password, use `/kwallet recover <mnemonic> <new-password>` to restore access with a new password.
 
 **"You do not have a wallet"**
 
