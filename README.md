@@ -57,8 +57,7 @@ If you want to start tipping others without having received a tip first:
 
 ### 2. Create and Secure Your Wallet
 
-Run `/kwallet unlock <password>` to create a new wallet. You'll receive your 12-word mnemonic phrase via DM - save it  
-immediately as it's the only way to recover your wallet.
+Run `/kwallet unlock <password>` to create a new wallet. You'll receive your 12-word mnemonic phrase via DM - save it immediately as it's the only way to recover your wallet.
 
 ### 3. Back Up Your Recovery Phrase
 
