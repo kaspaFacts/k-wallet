@@ -7,12 +7,12 @@
 3. [K-Wallet User Guide](#k-wallet-user-guide)
 4. [Discord's Slash Command Interface](#discord-slash-command-interface)
 5. [Developer Guide](#developer-guide)
-    - [Run](#run)
-    - [Settings](#settings)
+   - [Run](#run)
+   - [Settings](#settings)
 
 ## First-Time Tip Recipient Guide
 
-When you receive your first tip, here's what you should do: 
+When you receive your first tip, here's what you should do:
 
 ### 1. Remember Your Password
 
@@ -48,29 +48,31 @@ address - just copy it from `/kwallet info` and use it as the destination in any
 
 If you want to start tipping others without having received a tip first:
 
-### 1. Create Your Wallet
+### 1. Remember Your Password
 
-Run `/kwallet unlock <password>` to create a new wallet. You'll receive your mnemonic phrase via DM - save it
-securely.
+- Your password encrypts your mnemonic in storage
+- Without the password, you cannot access your funds
+- There's no recovery option for forgotten passwords
+- Choose a strong, memorable password before creating your wallet
 
-### 2. Get Your Address
+### 2. Create and Secure Your Wallet
 
-Run `/kwallet info` to see your receiving address with an explorer link.
+Run `/kwallet unlock <password>` to create a new wallet. You'll receive your 12-word mnemonic phrase via DM - save it  
+immediately as it's the only way to recover your wallet.
 
-### 3. Fund Your Wallet (Testnet)
+### 3. Back Up Your Recovery Phrase
 
-If using testnet:
+- Store your mnemonic phrase offline and securely
+- Never share it with anyone
+- You can view it later with `/kwallet info show-secret:true` (requires unlocking)
 
-- Run `/kwallet faucet` to get a link to request test funds
-- Or send KAS from any external wallet to your address
-
-### 4. Fund Your Wallet (Mainnet)
+### 5. Fund Your Wallet
 
 - Send KAS from any exchange or external wallet to your address
 - Your address works like any standard Kaspa address
 - Use the explorer link from `/kwallet info` to verify deposits
 
-### 5. Start Tipping
+### 6. Start Tipping
 
 Once funded, you can tip others:
 > `/kwallet tip @user 10 "Here's a tip!"`
