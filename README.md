@@ -65,13 +65,13 @@ Run `/kwallet unlock <password>` to create a new wallet. You'll receive your 12-
 - Never share it with anyone
 - You can view it later with `/kwallet info show-secret:true` (requires unlocking)
 
-### 5. Fund Your Wallet
+### 4. Fund Your Wallet
 
 - Send KAS from any exchange or external wallet to your address
 - Your address works like any standard Kaspa address
 - Use the explorer link from `/kwallet info` to verify deposits
 
-### 6. Start Tipping
+### 5. Start Tipping
 
 Once funded, you can tip others:
 > `/kwallet tip @user 10 "Here's a tip!"`
@@ -157,14 +157,6 @@ Features:
 
 - Autocomplete shows balance and saved withdraw address
 - Set default withdraw address in settings
-
-### 🚰 Faucet - Request Test Funds (Testnet Only)
-
-Get test KAS from the faucet:
-
-> `/kwallet faucet`
-
-Provides a link to request funds for your wallet address.
 
 ## Wallet Management
 
@@ -334,8 +326,7 @@ For users without wallets:
 | `info` | View wallet info | Yes | No (degraded) |  
 | `settings` | Configure wallet | Yes | Varies |  
 | `compound` | Merge UTXOs | Yes | Yes |  
-| `split` | Create UTXOs | Yes | Yes |  
-| `faucet` | Get test funds | Yes | No |  
+| `split` | Create UTXOs | Yes | Yes |
 | `recover` | Restore wallet | No | N/A |  
 | `address_of` | Look up address | No | No |  
 
